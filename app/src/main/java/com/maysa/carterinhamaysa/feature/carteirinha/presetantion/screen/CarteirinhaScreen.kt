@@ -12,8 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import br.senai.carteirinha.samuel.R
 import com.maysa.carterinhamaysa.feature.carteirinha.presetantion.component.PerfilAluno
-import com.maysa.carterinhamaysa.R
 import com.rafaelcosta.myapplication.QrCode
 
 @Composable
@@ -22,7 +22,7 @@ fun CarteirinhaScreen(
 ) {
     Box {
         Image(
-            painter = painterResource(id = R.drawable.fundoo),
+            painter = painterResource(id = R.drawable.fundo),
             contentDescription = "Fundo",
             modifier = Modifier
                 .fillMaxSize()
@@ -42,11 +42,11 @@ fun CarteirinhaScreen(
                     .fillMaxWidth(0.8f)
             )
             PerfilAluno(
-                nome = "Maysa Santos ",
+                nome = "Samuel Fernandes ",
                 curso = "Desenvolvimento de Sistemas"
             )
             QrCode(
-                conteudo = "90000000001756308340"
+                conteudo = "90000000001755369450"
             )
         }
 

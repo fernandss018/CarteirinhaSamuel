@@ -16,13 +16,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.maysa.carterinhamaysa.R
+import br.senai.carteirinha.samuel.R
 
 @Composable
 fun PerfilAluno(
     nome: String,
     curso: String,
-    idFoto: Int = R.drawable.perfiill
+    idFoto: Int = R.drawable.samuel_foto
 ) {
     Column(
         verticalArrangement = Arrangement.spacedBy(10.dp),

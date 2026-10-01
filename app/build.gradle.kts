@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.maysa.carterinhamaysa"
+    namespace = "br.senai.carteirinha.samuel"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.com.maysa.carterinhamaysa"
+        applicationId = "br.senai.carteirinha.samuel"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -42,6 +42,7 @@ android {
 
 dependencies {
     implementation(platform(libs.androidx.compose.bom))
+
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.foundation)
     implementation(libs.androidx.compose.material3)
@@ -52,22 +53,32 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
     implementation(libs.androidx.navigation.runtime.ktx)
+
+    implementation("androidx.compose.material:material-icons-extended")
+
+    implementation("com.google.zxing:core:3.5.3")
+
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.0")
+
+    implementation("androidx.navigation:navigation-compose:2.8.8")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
+
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
     testImplementation(libs.junit)
+
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
-
-
-    implementation("com.google.zxing:core:3.5.3")
-    implementation("androidx.compose.ui:ui-text-google-fonts:1.6.0")
-    implementation("androidx.navigation:navigation-compose:2.8.8")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
-
 }
